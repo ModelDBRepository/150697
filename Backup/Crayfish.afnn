@@ -1,0 +1,60 @@
+<NeuralModule>
+<TimeStep>0.00025</TimeStep>
+<NetworkSize x="3" y="1" z="1"/>
+<Neurons>
+<Neuron>
+<Position x="0" y="0" z="0"/>
+<Name>Depressor Input</Name>
+<Type>Regular</Type>
+<Enabled>True</Enabled>
+<Cn>2.5e-11</Cn>
+<Gn>5e-08</Gn>
+<Vth>0</Vth>
+<Vrest>-0.07</Vrest>
+<Fmin>0</Fmin>
+<Gain>16</Gain>
+<ExternalI>0</ExternalI>
+<VNoiseMax>0</VNoiseMax>
+<RelativeAccom>0</RelativeAccom>
+<AccomTimeConst>0.03</AccomTimeConst>
+<GainType>False</GainType>
+<Synapses/>
+</Neuron>
+<Neuron>
+<Position x="1" y="0" z="0"/>
+<Name>P Levator Input</Name>
+<Type>Regular</Type>
+<Enabled>True</Enabled>
+<Cn>2.5e-11</Cn>
+<Gn>5e-08</Gn>
+<Vth>0</Vth>
+<Vrest>-0.07</Vrest>
+<Fmin>0</Fmin>
+<Gain>16</Gain>
+<ExternalI>0</ExternalI>
+<VNoiseMax>0</VNoiseMax>
+<RelativeAccom>0</RelativeAccom>
+<AccomTimeConst>0.03</AccomTimeConst>
+<GainType>False</GainType>
+<Synapses/>
+</Neuron>
+<Neuron>
+<Position x="2" y="0" z="0"/>
+<Name>A Levator Input</Name>
+<Type>Regular</Type>
+<Enabled>True</Enabled>
+<Cn>2.5e-11</Cn>
+<Gn>5e-08</Gn>
+<Vth>0</Vth>
+<Vrest>-0.07</Vrest>
+<Fmin>0</Fmin>
+<Gain>16</Gain>
+<ExternalI>0</ExternalI>
+<VNoiseMax>0</VNoiseMax>
+<RelativeAccom>0</RelativeAccom>
+<AccomTimeConst>0.03</AccomTimeConst>
+<GainType>False</GainType>
+<Synapses/>
+</Neuron>
+</Neurons>
+</NeuralModule>

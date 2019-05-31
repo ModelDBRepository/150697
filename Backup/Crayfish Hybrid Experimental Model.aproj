@@ -1,0 +1,691 @@
+<Project>
+<ProjectName>Crayfish Hybrid Experimental Model</ProjectName>
+<PhysicsAssemblyName>VortexAnimatTools.dll</PhysicsAssemblyName>
+<PhysicsClassName>VortexAnimatTools.DataObjects.Simulation</PhysicsClassName>
+<SimulationFile>Crayfish Hybrid Experimental Model.asim</SimulationFile>
+<LogLevel>None</LogLevel>
+<Version>1</Version>
+<SimWindowLocation x="-8" y="-30"/>
+<SimWindowSize Width="1588" Height="1059"/>
+<DockingForms>
+<Form>
+<Title>Project Workspace</Title>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.Forms.ProjectWorkspace</ClassName>
+<TabTitle>Workspace</TabTitle>
+<BackgroundForm>True</BackgroundForm>
+<TreeViewHeight>495</TreeViewHeight>
+</Form>
+<Form>
+<Title>Project Toolbox</Title>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.Forms.Toolbox</ClassName>
+<TabTitle>Toolbox</TabTitle>
+<BackgroundForm>True</BackgroundForm>
+</Form>
+<Form>
+<Title>Simulation Controller</Title>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.Forms.SimulationController</ClassName>
+<TabTitle>SimulationController</TabTitle>
+<BackgroundForm>True</BackgroundForm>
+<StartingBarTime Value="0" Scale="milli" Actual="0"/>
+<EndingBarTime Value="5000" Scale="milli" Actual="5"/>
+<TimeBarInterval Value="1" Scale="None" Actual="1"/>
+<ActualTimeColor>-5383962</ActualTimeColor>
+<CurrentTimeColor>-16776961</CurrentTimeColor>
+<AutomaticTimeScale>True</AutomaticTimeScale>
+<DivisionMarkFactor>4</DivisionMarkFactor>
+<Divisions>10</Divisions>
+<MajorInterval>5</MajorInterval>
+<MiddleMarkFactor>3</MiddleMarkFactor>
+<TimeScale>MilliSeconds</TimeScale>
+</Form>
+</DockingForms>
+<ChildForms>
+<Child>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.Forms.Behavior.Editor</ClassName>
+<EditorFile>Crayfish.abef</EditorFile>
+<Form>
+<AssemblyFile>LicensedAnimatTools.dll</AssemblyFile>
+<ClassName>LicensedAnimatTools.Forms.Behavior.AddFlowDiagram</ClassName>
+<Title>Edit Crayfish</Title>
+</Form>
+</Child>
+<Child>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.Forms.BodyPlan.Editor</ClassName>
+<EditorFile>Crayfish.abpe</EditorFile>
+<Form>
+<AssemblyFile>LicensedAnimatTools.dll</AssemblyFile>
+<ClassName>LicensedAnimatTools.Forms.Behavior.AddFlowDiagram</ClassName>
+<Title>Edit Crayfish</Title>
+</Form>
+</Child>
+<Child>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.Forms.Tools.Viewer</ClassName>
+<EditorFile>Experiment Data.atvf</EditorFile>
+<TreeViewHeight>435</TreeViewHeight>
+<Form>
+<AssemblyFile>licensedanimattools.dll</AssemblyFile>
+<ClassName>LicensedAnimatTools.Forms.Charts.LineChart</ClassName>
+<Title>Experiment Data</Title>
+</Form>
+</Child>
+</ChildForms>
+<ToolViewers>
+<ToolHolder>
+<ID>a4503ce2-30f0-4087-bb2f-4cd41f79c757</ID>
+<Name>Experiment Data</Name>
+<BaseAssemblyFile>licensedanimattools.dll</BaseAssemblyFile>
+<BaseClassName>LicensedAnimatTools.Forms.Charts.LineChart</BaseClassName>
+</ToolHolder>
+<ToolHolder>
+<ID>633bac9e-e11b-476c-9b3c-8aecaee24a46</ID>
+<Name>Post Lev Set Up</Name>
+<BaseAssemblyFile>licensedanimattools.dll</BaseAssemblyFile>
+<BaseClassName>LicensedAnimatTools.Forms.Charts.LineChart</BaseClassName>
+</ToolHolder>
+<ToolHolder>
+<ID>b0605c71-b815-415f-90e9-f539e9e50b5a</ID>
+<Name>Depressor Set Up</Name>
+<BaseAssemblyFile>licensedanimattools.dll</BaseAssemblyFile>
+<BaseClassName>LicensedAnimatTools.Forms.Charts.LineChart</BaseClassName>
+</ToolHolder>
+<ToolHolder>
+<ID>23924ec2-f0d8-44fa-8c6d-5304cb47d832</ID>
+<Name>Ant Lev Set Up</Name>
+<BaseAssemblyFile>licensedanimattools.dll</BaseAssemblyFile>
+<BaseClassName>LicensedAnimatTools.Forms.Charts.LineChart</BaseClassName>
+</ToolHolder>
+<ToolHolder>
+<ID>4decf274-f6d0-4b35-b6c5-97977f0642c7</ID>
+<Name>DataTool_4</Name>
+<BaseAssemblyFile>licensedanimattools.dll</BaseAssemblyFile>
+<BaseClassName>LicensedAnimatTools.Forms.Charts.DataArray</BaseClassName>
+</ToolHolder>
+</ToolViewers>
+<Stimuli>
+<Stimulus>
+<AssemblyFile>hybrid_interfacetools.dll</AssemblyFile>
+<ClassName>Hybrid_InterfaceTools.DataObjects.ExternalStimuli.HybridStimulus</ClassName>
+<Name>Hybrid Stimulus</Name>
+<ID>d9037d6f-6c2d-408f-ad48-a1de9626a692</ID>
+<StartTime Value="0" Scale="None" Actual="0"/>
+<EndTime Value="5" Scale="None" Actual="5"/>
+<StepInterval Value="0" Scale="milli" Actual="0"/>
+<AlwaysActive>True</AlwaysActive>
+<Enabled>True</Enabled>
+<ValueType>Constant</ValueType>
+<Equation/>
+<OrganismID>788969bd-7025-4b3f-b173-723fb1588ff8</OrganismID>
+<StepMultiple>1</StepMultiple>
+<Input_1>
+<Enable>False</Enable>
+<ID>7f286b19-54d7-4522-985a-b47f4f424b19</ID>
+<Gain>
+<ID>7ec90b02-7cc6-4566-a977-b09b91b4b76b</ID>
+<Type>Polynomial</Type>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.DataObjects.Gains.Polynomial</ClassName>
+<UseLimits>True</UseLimits>
+<LimitsReadOnly>False</LimitsReadOnly>
+<LimitOutputsReadOnly>False</LimitOutputsReadOnly>
+<UseParentIncomingDataType>True</UseParentIncomingDataType>
+<LowerLimitScale Value="0" Scale="None" Actual="0"/>
+<UpperLimitScale Value="5" Scale="None" Actual="5"/>
+<LowerOutputScale Value="0" Scale="None" Actual="0"/>
+<UpperOutputScale Value="2.5" Scale="nano" Actual="2.5e-09"/>
+<IndependentUnits/>
+<DependentUnits>Current</DependentUnits>
+<A Value="0" Scale="None" Actual="0"/>
+<B Value="0" Scale="None" Actual="0"/>
+<C Value="0.5" Scale="nano" Actual="5e-10"/>
+<D Value="0" Scale="None" Actual="0"/>
+</Gain>
+</Input_1>
+<Input_2>
+<Enable>True</Enable>
+<ID>7f286b19-54d7-4522-985a-b47f4f424b19</ID>
+<Gain>
+<ID>f90cbade-7a0b-4d61-8d13-37f12d1a1613</ID>
+<Type>Polynomial</Type>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.DataObjects.Gains.Polynomial</ClassName>
+<UseLimits>True</UseLimits>
+<LimitsReadOnly>False</LimitsReadOnly>
+<LimitOutputsReadOnly>False</LimitOutputsReadOnly>
+<UseParentIncomingDataType>True</UseParentIncomingDataType>
+<LowerLimitScale Value="0" Scale="None" Actual="0"/>
+<UpperLimitScale Value="5" Scale="None" Actual="5"/>
+<LowerOutputScale Value="0" Scale="None" Actual="0"/>
+<UpperOutputScale Value="2.5" Scale="nano" Actual="2.5e-09"/>
+<IndependentUnits/>
+<DependentUnits>Current</DependentUnits>
+<A Value="0" Scale="None" Actual="0"/>
+<B Value="0" Scale="None" Actual="0"/>
+<C Value="0.5" Scale="nano" Actual="5e-10"/>
+<D Value="0" Scale="None" Actual="0"/>
+</Gain>
+</Input_2>
+<Input_3>
+<Enable>True</Enable>
+<ID>4a3a540e-211d-4e3d-a353-55d832655241</ID>
+<Gain>
+<ID>a67ca893-3df3-463b-8bf8-1b30257cfd33</ID>
+<Type>Polynomial</Type>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.DataObjects.Gains.Polynomial</ClassName>
+<UseLimits>True</UseLimits>
+<LimitsReadOnly>False</LimitsReadOnly>
+<LimitOutputsReadOnly>False</LimitOutputsReadOnly>
+<UseParentIncomingDataType>True</UseParentIncomingDataType>
+<LowerLimitScale Value="1.5" Scale="None" Actual="1.5"/>
+<UpperLimitScale Value="5.1" Scale="None" Actual="5.1"/>
+<LowerOutputScale Value="0" Scale="None" Actual="0"/>
+<UpperOutputScale Value="0" Scale="None" Actual="0"/>
+<IndependentUnits/>
+<DependentUnits>Current</DependentUnits>
+<A Value="0" Scale="None" Actual="0"/>
+<B Value="0" Scale="None" Actual="0"/>
+<C Value="0.675" Scale="nano" Actual="6.75e-10"/>
+<D Value="0" Scale="nano" Actual="0"/>
+</Gain>
+</Input_3>
+<Input_4>
+<Enable>True</Enable>
+<ID>769023cb-b765-423d-b574-838222669ae3</ID>
+<Gain>
+<ID>849cc46d-c325-4799-851f-94a7b1874632</ID>
+<Type>Polynomial</Type>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.DataObjects.Gains.Polynomial</ClassName>
+<UseLimits>True</UseLimits>
+<LimitsReadOnly>False</LimitsReadOnly>
+<LimitOutputsReadOnly>False</LimitOutputsReadOnly>
+<UseParentIncomingDataType>True</UseParentIncomingDataType>
+<LowerLimitScale Value="0" Scale="None" Actual="0"/>
+<UpperLimitScale Value="5" Scale="None" Actual="5"/>
+<LowerOutputScale Value="0" Scale="None" Actual="0"/>
+<UpperOutputScale Value="3.75" Scale="nano" Actual="3.75e-09"/>
+<IndependentUnits/>
+<DependentUnits>Current</DependentUnits>
+<A Value="0" Scale="None" Actual="0"/>
+<B Value="0" Scale="None" Actual="0"/>
+<C Value="0.75" Scale="nano" Actual="7.5e-10"/>
+<D Value="0" Scale="None" Actual="0"/>
+</Gain>
+</Input_4>
+<CBCO_1>
+<Enable>False</Enable>
+<ID>f209e845-c598-45b3-a963-56b3eb979213</ID>
+<Gain>
+<ID>0792da07-5e34-45f0-8102-86080d8cae1c</ID>
+<Type>Polynomial</Type>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.DataObjects.Gains.Polynomial</ClassName>
+<UseLimits>False</UseLimits>
+<LimitsReadOnly>False</LimitsReadOnly>
+<LimitOutputsReadOnly>False</LimitOutputsReadOnly>
+<UseParentIncomingDataType>True</UseParentIncomingDataType>
+<LowerLimitScale Value="0" Scale="None" Actual="0"/>
+<UpperLimitScale Value="1" Scale="None" Actual="1"/>
+<LowerOutputScale Value="0" Scale="None" Actual="0"/>
+<UpperOutputScale Value="1" Scale="None" Actual="1"/>
+<IndependentUnits/>
+<DependentUnits>Output Data</DependentUnits>
+<A Value="0" Scale="None" Actual="0"/>
+<B Value="0" Scale="None" Actual="0"/>
+<C Value="1" Scale="None" Actual="1"/>
+<D Value="0" Scale="None" Actual="0"/>
+</Gain>
+</CBCO_1>
+<CBCO_2>
+<Enable>True</Enable>
+<ID>f209e845-c598-45b3-a963-56b3eb979213</ID>
+<Gain>
+<ID>2b3bfc8d-1ddf-4353-80af-fe210bb28610</ID>
+<Type>Polynomial</Type>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.DataObjects.Gains.Polynomial</ClassName>
+<UseLimits>True</UseLimits>
+<LimitsReadOnly>False</LimitsReadOnly>
+<LimitOutputsReadOnly>False</LimitOutputsReadOnly>
+<UseParentIncomingDataType>True</UseParentIncomingDataType>
+<LowerLimitScale Value="4" Scale="milli" Actual="0.004"/>
+<UpperLimitScale Value="5.3" Scale="milli" Actual="0.0053"/>
+<LowerOutputScale Value="720" Scale="None" Actual="720"/>
+<UpperOutputScale Value="0" Scale="None" Actual="0"/>
+<IndependentUnits/>
+<DependentUnits>Output Data</DependentUnits>
+<A Value="0" Scale="None" Actual="0"/>
+<B Value="0" Scale="None" Actual="0"/>
+<C Value="-550000" Scale="None" Actual="-550000"/>
+<D Value="2920" Scale="None" Actual="2920"/>
+</Gain>
+</CBCO_2>
+</Stimulus>
+<Stimulus>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.DataObjects.ExternalStimuli.TonicCurrent</ClassName>
+<Name>P Levator bias</Name>
+<ID>66129767-4db2-4c8b-9780-dfd616022bdb</ID>
+<StartTime Value="0" Scale="None" Actual="0"/>
+<EndTime Value="500" Scale="None" Actual="500"/>
+<StepInterval Value="0" Scale="milli" Actual="0"/>
+<AlwaysActive>False</AlwaysActive>
+<Enabled>True</Enabled>
+<ValueType>Constant</ValueType>
+<Equation/>
+<OrganismID>788969bd-7025-4b3f-b173-723fb1588ff8</OrganismID>
+<NodeID>7f286b19-54d7-4522-985a-b47f4f424b19</NodeID>
+<CurrentOn Value="-0.1" Scale="nano" Actual="-1e-10"/>
+<CurrentOff Value="0" Scale="nano" Actual="0"/>
+<CurrentBurstOff Value="0" Scale="nano" Actual="0"/>
+<CycleOnDuration Value="0.5" Scale="Kilo" Actual="500"/>
+<CycleOffDuration Value="0" Scale="None" Actual="0"/>
+<BurstOnDuration Value="0.5" Scale="Kilo" Actual="500"/>
+<BurstOffDuration Value="0" Scale="None" Actual="0"/>
+</Stimulus>
+<Stimulus>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.DataObjects.ExternalStimuli.TonicCurrent</ClassName>
+<Name>Bias Ant Levator Current</Name>
+<ID>e0592f18-3ef9-4167-9f42-6f97e0b28b93</ID>
+<StartTime Value="0" Scale="None" Actual="0"/>
+<EndTime Value="500" Scale="None" Actual="500"/>
+<StepInterval Value="0" Scale="milli" Actual="0"/>
+<AlwaysActive>True</AlwaysActive>
+<Enabled>True</Enabled>
+<ValueType>Constant</ValueType>
+<Equation/>
+<OrganismID>788969bd-7025-4b3f-b173-723fb1588ff8</OrganismID>
+<NodeID>769023cb-b765-423d-b574-838222669ae3</NodeID>
+<CurrentOn Value="-0.2" Scale="nano" Actual="-2e-10"/>
+<CurrentOff Value="0" Scale="nano" Actual="0"/>
+<CurrentBurstOff Value="0" Scale="nano" Actual="0"/>
+<CycleOnDuration Value="0.5" Scale="Kilo" Actual="500"/>
+<CycleOffDuration Value="0" Scale="None" Actual="0"/>
+<BurstOnDuration Value="0.5" Scale="Kilo" Actual="500"/>
+<BurstOffDuration Value="0" Scale="None" Actual="0"/>
+</Stimulus>
+<Stimulus>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.DataObjects.ExternalStimuli.RepetitiveCurrent</ClassName>
+<Name>Tonic Stimulus_2</Name>
+<ID>7f27d752-2d89-4df4-947a-8408f8eb75b2</ID>
+<StartTime Value="0.5" Scale="None" Actual="0.5"/>
+<EndTime Value="0.8" Scale="None" Actual="0.8"/>
+<StepInterval Value="0" Scale="milli" Actual="0"/>
+<AlwaysActive>False</AlwaysActive>
+<Enabled>False</Enabled>
+<ValueType>Equation</ValueType>
+<Equation/>
+<OrganismID>788969bd-7025-4b3f-b173-723fb1588ff8</OrganismID>
+<NodeID>c44ca465-fc5b-4166-815a-63eef227cef2</NodeID>
+<CurrentOn Value="300" Scale="nano" Actual="3e-07"/>
+<CurrentOff Value="0" Scale="nano" Actual="0"/>
+<CurrentBurstOff Value="0" Scale="nano" Actual="0"/>
+<CycleOnDuration Value="0.3" Scale="milli" Actual="0.0003"/>
+<CycleOffDuration Value="10" Scale="milli" Actual="0.01"/>
+<BurstOnDuration Value="30" Scale="centi" Actual="0.3"/>
+<BurstOffDuration Value="0" Scale="None" Actual="0"/>
+</Stimulus>
+<Stimulus>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.DataObjects.ExternalStimuli.Force</ClassName>
+<Name>Merus Stim 5</Name>
+<ID>4ce158b3-d09d-460f-a43c-6605d96a4791</ID>
+<StartTime Value="50" Scale="None" Actual="50"/>
+<EndTime Value="50.2" Scale="None" Actual="50.2"/>
+<StepInterval Value="0" Scale="milli" Actual="0"/>
+<AlwaysActive>False</AlwaysActive>
+<Enabled>False</Enabled>
+<ValueType>Constant</ValueType>
+<Equation/>
+<StructureID>788969bd-7025-4b3f-b173-723fb1588ff8</StructureID>
+<PartID>4690cdd5-b5b2-4067-8e04-906f5ca847f8</PartID>
+<PositionX Value="0" Scale="centi" Actual="0"/>
+<PositionY Value="0.8" Scale="centi" Actual="0.008"/>
+<PositionZ Value="0" Scale="centi" Actual="0"/>
+<ForceX Value="0" Scale="None" Actual="0"/>
+<ForceY Value="0.5" Scale="None" Actual="0.5"/>
+<ForceZ Value="0" Scale="None" Actual="0"/>
+<TorqueX Value="0" Scale="None" Actual="0"/>
+<TorqueY Value="0" Scale="None" Actual="0"/>
+<TorqueZ Value="0" Scale="None" Actual="0"/>
+</Stimulus>
+<Stimulus>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.DataObjects.ExternalStimuli.Force</ClassName>
+<Name>Merus Stim 3</Name>
+<ID>5232ce17-c5fe-419c-8b4a-979bec2463aa</ID>
+<StartTime Value="30" Scale="None" Actual="30"/>
+<EndTime Value="30.2" Scale="None" Actual="30.2"/>
+<StepInterval Value="0" Scale="milli" Actual="0"/>
+<AlwaysActive>False</AlwaysActive>
+<Enabled>False</Enabled>
+<ValueType>Constant</ValueType>
+<Equation/>
+<StructureID>788969bd-7025-4b3f-b173-723fb1588ff8</StructureID>
+<PartID>4690cdd5-b5b2-4067-8e04-906f5ca847f8</PartID>
+<PositionX Value="0" Scale="centi" Actual="0"/>
+<PositionY Value="0.8" Scale="centi" Actual="0.008"/>
+<PositionZ Value="0" Scale="centi" Actual="0"/>
+<ForceX Value="0" Scale="None" Actual="0"/>
+<ForceY Value="0.5" Scale="None" Actual="0.5"/>
+<ForceZ Value="0" Scale="None" Actual="0"/>
+<TorqueX Value="0" Scale="None" Actual="0"/>
+<TorqueY Value="0" Scale="None" Actual="0"/>
+<TorqueZ Value="0" Scale="None" Actual="0"/>
+</Stimulus>
+<Stimulus>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.DataObjects.ExternalStimuli.Force</ClassName>
+<Name>Merus Stim 2</Name>
+<ID>a4c2ff6f-be70-4ddf-9bf3-825b008d6a7b</ID>
+<StartTime Value="20" Scale="None" Actual="20"/>
+<EndTime Value="20.2" Scale="None" Actual="20.2"/>
+<StepInterval Value="0" Scale="milli" Actual="0"/>
+<AlwaysActive>False</AlwaysActive>
+<Enabled>False</Enabled>
+<ValueType>Constant</ValueType>
+<Equation/>
+<StructureID>788969bd-7025-4b3f-b173-723fb1588ff8</StructureID>
+<PartID>4690cdd5-b5b2-4067-8e04-906f5ca847f8</PartID>
+<PositionX Value="0" Scale="centi" Actual="0"/>
+<PositionY Value="0.8" Scale="centi" Actual="0.008"/>
+<PositionZ Value="0" Scale="centi" Actual="0"/>
+<ForceX Value="0" Scale="None" Actual="0"/>
+<ForceY Value="0.5" Scale="None" Actual="0.5"/>
+<ForceZ Value="0" Scale="None" Actual="0"/>
+<TorqueX Value="0" Scale="None" Actual="0"/>
+<TorqueY Value="0" Scale="None" Actual="0"/>
+<TorqueZ Value="0" Scale="None" Actual="0"/>
+</Stimulus>
+<Stimulus>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.DataObjects.ExternalStimuli.Force</ClassName>
+<Name>Merus stim1</Name>
+<ID>377bb6f5-1a8f-49b5-abcb-33c122b858b8</ID>
+<StartTime Value="10" Scale="None" Actual="10"/>
+<EndTime Value="10.2" Scale="None" Actual="10.2"/>
+<StepInterval Value="0" Scale="milli" Actual="0"/>
+<AlwaysActive>False</AlwaysActive>
+<Enabled>False</Enabled>
+<ValueType>Constant</ValueType>
+<Equation/>
+<StructureID>788969bd-7025-4b3f-b173-723fb1588ff8</StructureID>
+<PartID>4690cdd5-b5b2-4067-8e04-906f5ca847f8</PartID>
+<PositionX Value="0" Scale="centi" Actual="0"/>
+<PositionY Value="0.8" Scale="centi" Actual="0.008"/>
+<PositionZ Value="0" Scale="centi" Actual="0"/>
+<ForceX Value="0" Scale="None" Actual="0"/>
+<ForceY Value="0.5" Scale="None" Actual="0.5"/>
+<ForceZ Value="0" Scale="None" Actual="0"/>
+<TorqueX Value="0" Scale="None" Actual="0"/>
+<TorqueY Value="0" Scale="None" Actual="0"/>
+<TorqueZ Value="0" Scale="None" Actual="0"/>
+</Stimulus>
+<Stimulus>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.DataObjects.ExternalStimuli.TonicCurrent</ClassName>
+<Name>Depressor Bias</Name>
+<ID>18990497-c503-44d1-b469-a9c361e98831</ID>
+<StartTime Value="0" Scale="None" Actual="0"/>
+<EndTime Value="5" Scale="None" Actual="5"/>
+<StepInterval Value="0" Scale="milli" Actual="0"/>
+<AlwaysActive>True</AlwaysActive>
+<Enabled>True</Enabled>
+<ValueType>Constant</ValueType>
+<Equation/>
+<OrganismID>788969bd-7025-4b3f-b173-723fb1588ff8</OrganismID>
+<NodeID>4a3a540e-211d-4e3d-a353-55d832655241</NodeID>
+<CurrentOn Value="0" Scale="nano" Actual="0"/>
+<CurrentOff Value="0" Scale="nano" Actual="0"/>
+<CurrentBurstOff Value="0" Scale="nano" Actual="0"/>
+<CycleOnDuration Value="5" Scale="None" Actual="5"/>
+<CycleOffDuration Value="0" Scale="None" Actual="0"/>
+<BurstOnDuration Value="5" Scale="None" Actual="5"/>
+<BurstOffDuration Value="0" Scale="None" Actual="0"/>
+</Stimulus>
+<Stimulus>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.DataObjects.ExternalStimuli.RepetitiveCurrent</ClassName>
+<Name>Phasic Stimulus_1</Name>
+<ID>9907768a-9ba9-4192-b022-97f9cfa04a27</ID>
+<StartTime Value="0.5" Scale="None" Actual="0.5"/>
+<EndTime Value="5" Scale="None" Actual="5"/>
+<StepInterval Value="0" Scale="milli" Actual="0"/>
+<AlwaysActive>False</AlwaysActive>
+<Enabled>False</Enabled>
+<ValueType>Constant</ValueType>
+<Equation>100*sin(.5*t)</Equation>
+<OrganismID>788969bd-7025-4b3f-b173-723fb1588ff8</OrganismID>
+<NodeID>89a8c2a5-7b1e-4313-a136-d67dbcc96272</NodeID>
+<CurrentOn Value="200" Scale="nano" Actual="2e-07"/>
+<CurrentOff Value="0" Scale="nano" Actual="0"/>
+<CurrentBurstOff Value="0" Scale="nano" Actual="0"/>
+<CycleOnDuration Value="2" Scale="milli" Actual="0.002"/>
+<CycleOffDuration Value="100" Scale="milli" Actual="0.1"/>
+<BurstOnDuration Value="4.5" Scale="None" Actual="4.5"/>
+<BurstOffDuration Value="0" Scale="None" Actual="0"/>
+</Stimulus>
+<Stimulus>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.DataObjects.ExternalStimuli.MotorVelocity</ClassName>
+<Name>CB Sinusoid</Name>
+<ID>74ae1336-ce59-40f6-a381-f8df0f8d73f8</ID>
+<StartTime Value="2.5" Scale="None" Actual="2.5"/>
+<EndTime Value="25" Scale="None" Actual="25"/>
+<StepInterval Value="0" Scale="milli" Actual="0"/>
+<AlwaysActive>False</AlwaysActive>
+<Enabled>False</Enabled>
+<ValueType>Equation</ValueType>
+<Equation>2.5*sin(3.14*t)</Equation>
+<StructureID>788969bd-7025-4b3f-b173-723fb1588ff8</StructureID>
+<PartID>74c44547-5eec-4102-960f-96fcb71f2f65</PartID>
+<Velocity Value="500" Scale="centi" Actual="5"/>
+<DisableMotorWhenDone>True</DisableMotorWhenDone>
+</Stimulus>
+<Stimulus>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.DataObjects.ExternalStimuli.Force</ClassName>
+<Name>Merus stim 4</Name>
+<ID>96f35352-12d8-49c5-b3fd-ff4f6b5de080</ID>
+<StartTime Value="40" Scale="None" Actual="40"/>
+<EndTime Value="40.2" Scale="None" Actual="40.2"/>
+<StepInterval Value="0" Scale="milli" Actual="0"/>
+<AlwaysActive>False</AlwaysActive>
+<Enabled>False</Enabled>
+<ValueType>Constant</ValueType>
+<Equation/>
+<StructureID>788969bd-7025-4b3f-b173-723fb1588ff8</StructureID>
+<PartID>4690cdd5-b5b2-4067-8e04-906f5ca847f8</PartID>
+<PositionX Value="0" Scale="centi" Actual="0"/>
+<PositionY Value="0.8" Scale="centi" Actual="0.008"/>
+<PositionZ Value="0" Scale="centi" Actual="0"/>
+<ForceX Value="0" Scale="None" Actual="0"/>
+<ForceY Value="0.5" Scale="None" Actual="0.5"/>
+<ForceZ Value="0" Scale="None" Actual="0"/>
+<TorqueX Value="0" Scale="None" Actual="0"/>
+<TorqueY Value="0" Scale="None" Actual="0"/>
+<TorqueZ Value="0" Scale="None" Actual="0"/>
+</Stimulus>
+</Stimuli>
+<DockingConfig FormatVersion="5" InsideFill="False" InnerMinimum="20, 20">
+  <Content Name="Simulation Controller" Visible="True" Docked="True" AutoHidden="True" CaptionBar="True" CloseButton="True" DisplaySize="150, 102" DisplayLocation="409, 856" AutoHideSize="150, 102" FloatingSize="150, 150" FullTitle="Simulation Controller">
+    <DefaultRestore Type="Crownwood.Magic.Docking.RestoreContentState">
+      <Content Name="Simulation Controller" />
+      <State Value="DockLeft" />
+      <Child Type="null" />
+    </DefaultRestore>
+    <AutoHideRestore Type="Crownwood.Magic.Docking.RestoreAutoHideAffinity">
+      <Content Name="Simulation Controller" />
+      <State Value="DockBottom" />
+      <Next Count="0" />
+      <Previous Count="0" />
+      <NextAll Count="0" />
+      <PreviousAll Count="0" />
+      <Child Type="null" />
+    </AutoHideRestore>
+    <DockingRestore Type="Crownwood.Magic.Docking.RestoreContentDockingAffinity">
+      <Content Name="Simulation Controller" />
+      <State Value="DockBottom" />
+      <Position Size="1288, 113" Location="409, 856" />
+      <Best Count="1">
+        <Item Name="Simulation Controller" />
+      </Best>
+      <Next Count="0" />
+      <Previous Count="0" />
+      <NextAll Count="0" />
+      <PreviousAll Count="0" />
+      <Child Type="Crownwood.Magic.Docking.RestoreZoneAffinity">
+        <Content Name="Simulation Controller" />
+        <Space Value="100" />
+        <Best Count="1">
+          <Item Name="Simulation Controller" />
+        </Best>
+        <Next Count="0" />
+        <Previous Count="0" />
+        <Child Type="Crownwood.Magic.Docking.RestoreWindowContent">
+          <Content Name="Simulation Controller" />
+          <Next Count="0" />
+          <Previous Count="0" />
+          <Selected Value="True" />
+          <Child Type="null" />
+        </Child>
+      </Child>
+    </DockingRestore>
+    <FloatingRestore Type="Crownwood.Magic.Docking.RestoreContentFloatingAffinity">
+      <Content Name="Simulation Controller" />
+      <State Value="Floating" />
+      <Position Size="150, 168" Location="409, 856" />
+      <Best Count="0" />
+      <Associates Count="0" />
+      <Child Type="Crownwood.Magic.Docking.RestoreZoneAffinity">
+        <Content Name="Simulation Controller" />
+        <Space Value="100" />
+        <Best Count="0" />
+        <Next Count="0" />
+        <Previous Count="0" />
+        <Child Type="Crownwood.Magic.Docking.RestoreWindowContent">
+          <Content Name="Simulation Controller" />
+          <Next Count="0" />
+          <Previous Count="0" />
+          <Selected Value="True" />
+          <Child Type="null" />
+        </Child>
+      </Child>
+    </FloatingRestore>
+  </Content>
+  <Content Name="Project Toolbox" Visible="True" Docked="True" AutoHidden="True" CaptionBar="True" CloseButton="True" DisplaySize="20, 150" DisplayLocation="150, 150" AutoHideSize="20, 150" FloatingSize="150, 150" FullTitle="Project Toolbox">
+    <DefaultRestore Type="Crownwood.Magic.Docking.RestoreContentState">
+      <Content Name="Project Toolbox" />
+      <State Value="DockLeft" />
+      <Child Type="null" />
+    </DefaultRestore>
+    <AutoHideRestore Type="Crownwood.Magic.Docking.RestoreAutoHideAffinity">
+      <Content Name="Project Toolbox" />
+      <State Value="DockLeft" />
+      <Next Count="0" />
+      <Previous Count="0" />
+      <NextAll Count="1">
+        <Item Name="Project Workspace" />
+      </NextAll>
+      <PreviousAll Count="0" />
+      <Child Type="null" />
+    </AutoHideRestore>
+    <DockingRestore Type="Crownwood.Magic.Docking.RestoreContentDockingAffinity">
+      <Content Name="Project Toolbox" />
+      <State Value="DockLeft" />
+      <Position Size="150, 150" Location="150, 150" />
+      <Best Count="1">
+        <Item Name="Project Toolbox" />
+      </Best>
+      <Next Count="1">
+        <Item Name="Project Workspace" />
+      </Next>
+      <Previous Count="0" />
+      <NextAll Count="1">
+        <Item Name="Project Workspace" />
+      </NextAll>
+      <PreviousAll Count="0" />
+      <Child Type="Crownwood.Magic.Docking.RestoreZoneAffinity">
+        <Content Name="Project Toolbox" />
+        <Space Value="100" />
+        <Best Count="1">
+          <Item Name="Project Toolbox" />
+        </Best>
+        <Next Count="0" />
+        <Previous Count="0" />
+        <Child Type="Crownwood.Magic.Docking.RestoreWindowContent">
+          <Content Name="Project Toolbox" />
+          <Next Count="0" />
+          <Previous Count="0" />
+          <Selected Value="True" />
+          <Child Type="null" />
+        </Child>
+      </Child>
+    </DockingRestore>
+    <FloatingRestore Type="Crownwood.Magic.Docking.RestoreContentState">
+      <Content Name="Project Toolbox" />
+      <State Value="Floating" />
+      <Child Type="null" />
+    </FloatingRestore>
+  </Content>
+  <Content Name="Project Workspace" Visible="True" Docked="True" AutoHidden="True" CaptionBar="True" CloseButton="True" DisplaySize="356, 150" DisplayLocation="150, 150" AutoHideSize="356, 150" FloatingSize="150, 150" FullTitle="Project Workspace">
+    <DefaultRestore Type="Crownwood.Magic.Docking.RestoreContentState">
+      <Content Name="Project Workspace" />
+      <State Value="DockLeft" />
+      <Child Type="null" />
+    </DefaultRestore>
+    <AutoHideRestore Type="Crownwood.Magic.Docking.RestoreAutoHideAffinity">
+      <Content Name="Project Workspace" />
+      <State Value="DockLeft" />
+      <Next Count="0" />
+      <Previous Count="0" />
+      <NextAll Count="0" />
+      <PreviousAll Count="1">
+        <Item Name="Project Toolbox" />
+      </PreviousAll>
+      <Child Type="null" />
+    </AutoHideRestore>
+    <DockingRestore Type="Crownwood.Magic.Docking.RestoreContentDockingAffinity">
+      <Content Name="Project Workspace" />
+      <State Value="DockLeft" />
+      <Position Size="415, 150" Location="150, 150" />
+      <Best Count="1">
+        <Item Name="Project Workspace" />
+      </Best>
+      <Next Count="0" />
+      <Previous Count="0" />
+      <NextAll Count="0" />
+      <PreviousAll Count="0" />
+      <Child Type="Crownwood.Magic.Docking.RestoreZoneAffinity">
+        <Content Name="Project Workspace" />
+        <Space Value="100" />
+        <Best Count="1">
+          <Item Name="Project Workspace" />
+        </Best>
+        <Next Count="0" />
+        <Previous Count="0" />
+        <Child Type="Crownwood.Magic.Docking.RestoreWindowContent">
+          <Content Name="Project Workspace" />
+          <Next Count="0" />
+          <Previous Count="0" />
+          <Selected Value="True" />
+          <Child Type="null" />
+        </Child>
+      </Child>
+    </DockingRestore>
+    <FloatingRestore Type="Crownwood.Magic.Docking.RestoreContentState">
+      <Content Name="Project Workspace" />
+      <State Value="Floating" />
+      <Child Type="null" />
+    </FloatingRestore>
+  </Content>
+</DockingConfig>
+</Project>
